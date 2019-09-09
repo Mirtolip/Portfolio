@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"  prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
+<head>
+    
+	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{csrf_token()}}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/icon.png" type="image/png"  sizes="16x16">
+
+	<link rel="stylesheet" href="css/main_style.css">
+	<!-- <link rel="stylesheet" href="css/linearicons.css"> -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+	<script src="js/jquery-3.3.1.js"></script>
+
+	<title>FabosGold</title>
+	<!-- End of the head	 -->
+</head>
+
+<body>
+	<nav>
+		<div class="header background_nocolor" id="header">
+			<div class="logo">
+				<img src="img/Logo.png" alt="" style="width: auto; height: 32px; float: left; margin: 15px 10px;">
+				<h1>Fabos<span style="color: yellow;">Gold</span></h1>	
+			</div>
+			<div class="mobile_content"></div>
+			<div class="top_menu">
+				<ul>
+					<li><a href="#">Главная страница</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Разработка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="mobile_menu">
+		<ul>
+			<li><a href="#">Главная страница</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Разработка</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="header_name">
+			<h2>РАЗРАБОТКА САЙТОВ</h2>
+		</div>
+		
+		<div class="header_text">
+			<p>
+				В наше время без сайта не обходится ни одна крупная фирма. Несмотря на это находятся скептики, которые утверждают, что разработка сайта – не более чем пустая трата средств. Они забывают, что сайт – это лицо компании. Ведь многие потенциальные клиенты, впервые услышав о той или иной фирме, спешат познакомиться с информацией о ней на просторах Сети.
+			</p>
+		</div>
+
+		<div class="header_image">	
+			<img src="img/header/1.jpg" alt="" class="header_background">
+			<img src="img/header/234532453645-min-1.jpg" alt="" class="header_background">
+			<img src="img/header/9.jpg" alt="" class="header_background">
+			<img src="img/header/b2bca4f02e07aba47123e00b9ad19553.jpg" alt="" class="header_background">
+		</div>
+	</header>
+	
+	<section>
+			<div class="option_site">
+				<div class="option_title">	
+					<h2>Какой сайт выбрать?</h2>
+				</div>
+				<div class="option_content">
+					<p>
+						Ответ на данный вопрос напрямую зависит от того, какие задачи при помощи сайта Вы планируете решать. Так, реализация товаров через Интернет невозможна без Интернет-магазина. В то же время если такая цель перед Вами не стоит, и Вам необходим пиар, то вполне достаточно визитки или лендинга. Выбирайте подходящий ресурс, а мы поможем Вам в этом. Ниже представлена небольшая классификация, с которой мы предлагаем ознакомиться.
+					</p>
+				</div>
+			</div>
+			<div class="section_image">
+				<img src="img/LaptopwebAnalysis.png" alt="" style="width: 100%; height: auto; position: relative;">
+			</div>
+
+			<div class="tab">
+				<strong class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Сайт-визитка</strong>
+				<strong class="tablinks" onclick="openCity(event, 'Paris')">Корпоративный сайт</strong>
+				<strong class="tablinks" onclick="openCity(event, 'Tokyo')">Интернет-магазин</strong>
+				<strong class="tablinks" onclick="openCity(event, 'Italy')">Портал</strong>
+				<strong class="tablinks" onclick="openCity(event, 'Moscow')">Лендинг</strong>
+			</div>
+			
+			<div class="tabcontent" id="London">
+				<div class="tab_image">
+					<img src="img/header/1.jpg" alt="" style="width: 80%; height: 100%;">
+				</div>
+				<div class="tab_description">
+					<h3>Сайт-визитка</h3>
+					<p>
+						Небольшой по формату сайт, содержащий информацию о компании и оказываемых ею услугах (реализуемых ею товарах). Объем сайта от 5 до 10 страниц.
+					</p>
+					<button class="tab_button">Отправить заявку</button>
+				</div>
+			</div>
+
+			<div class="tabcontent" id="Paris">
+				<div class="tab_image">
+					<img src="img/header/234532453645-min-1.jpg" alt="" style="width: 80%; height: 100%;">
+				</div>
+				<div class="tab_description">
+					<h3>Корпоративный сайт</h3>
+					<p>
+						Объемный ресурс (от 10 до 50 страниц), на котором может содержаться каталог или портфолио компании, а также информация для внутрикорпоративного пользования.
+					</p>
+					<button class="tab_button">Отправить заявку</button>
+				</div>
+			</div>
+
+			<div class="tabcontent" id="Tokyo">
+				<div class="tab_image">
+					<img src="img/header/9.jpg" alt="" style="width: 80%; height: 100%;">
+				</div>
+				<div class="tab_description">
+					<h3>Интернет-магазин</h3>
+					<p>
+						Ресурс, использующийся для реализации товаров или услуг посредством Интернета, количество страниц не ограничено и может со временем пополняться.
+					</p>
+					<button class="tab_button">Отправить заявку</button>
+				</div>
+			</div>
+
+			<div class="tabcontent" id="Italy">
+				<div class="tab_image">
+					<img src="img/header/b2bca4f02e07aba47123e00b9ad19553.jpg" alt="" style="width: 80%; height: 100%;">
+				</div>
+				<div class="tab_description">
+					<h3>Портал</h3>
+					<p>
+						Объемный ресурс (свыше 100 страниц), содержащий комплекс сведений на определенную тему, а также ссылки на потенциально полезные пользователям сайты.
+					</p>
+					<button class="tab_button">Отправить заявку</button>
+				</div>
+			</div>
+
+			<div class="tabcontent" id="Moscow">
+				<div class="tab_image">
+					<img src="img/LaptopwebAnalysis.png" alt="" style="width: 80%; height: 100%;">
+				</div>
+				<div class="tab_description">
+					<h3>Лендинг</h3>
+					<p>
+						Сайт-одностраничник, содержащий исчерпывающую информацию о какой-либо одной услуге (одном товаре) и использующийся для проведения рекламной кампании в Сети.
+					</p>
+					<button class="tab_button">Отправить заявку</button>
+				</div>
+			</div>
+
+	</section>
+
+
+	<article>
+		<div class="article_title">
+			<h2>ЭТАПЫ РАЗРАБОТКИ</h2>
+		</div>
+		<div class="article_content">
+			<p>
+				Период разработки сайта напрямую зависит от сложности проекта и, соответственно, от того, какой конкретно сайт Вы выберете. Так, например, создание сайта-визитки занимает месяц, ресурса с обширным каталогом или интернет-магазина – от двух месяцев. Время это уходит на детальную проработку проекта, ведь важен каждый нюанс
+			</p>
+		</div>
+
+		<div class="article_step_box">
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Изучение заявки</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Мы подробно изучаем Вашу заявку и бизнес, что позволяет нам разработать стратегию не только эффективного инструмента, но и комплексного интернет решения, в целом.
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Планирование</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Понять, как будет выглядеть Ваш будущий ресурс, оценить расположение разделов и избежать в дальнейшем недочетов и погрешностей помогает разработка прототипа и ТЗ.
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Дизайн</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Отрисовка элементов дизайн-макета осуществляется в соответствии с техническим заданием, которое строго регламентирует их параметры (ширину, высоту и пр.).
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Верстка</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Если дизайн-макет сайта – это его «мускулатура», то html-код – это «скелет». Поэтому важно, чтобы верстка была качественной, и нам известно это не понаслышке.
+					</p>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div class="article_step_box">
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Настройка</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						На этапе программирования сайт настраивается на системе управления, и он «оживает»; но даже в таком состоянии он еще не готов к взаимодействию с пользователями.
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Наполнение</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Чтобы «оживший» ресурс заговорил с пользователями на одном языке, его необходимо наполнить информативным и грамотным контентом.
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Тестирование</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Ни один наш проект не внедряется в жизнь без проверки работоспособности, которая позволяет выявить и своевременно исправить упущенные моменты, «навести глянец».
+					</p>
+				</div>
+			</div>
+
+			<div class="article_step">	
+				<div class="image_article"></div>
+				<div class="article_title">
+					<h5>Сдача проекта</h5>
+				</div>
+				<div class="article_description">
+					<p>
+						Наполнение контентом после успешного тестирования. Изучение новых возможных дополнений. Сдача проекта клиенту!
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+	<div class="information">
+		<div class="information_title">
+			<h2>ПОЧЕМУ МЫ?</h2>
+		</div>
+		<div class="information_description">	
+			<p>	
+				Заказать разработку сайта Вы можете в нашей компании. Своим клиентам мы предлагаем только лучшее, поэтому, обратившись к нам, Вы можете быть уверены в том, что по итогу работы Ваш сайт будет не только привлекательным, но и функциональным, удобным и практичным. А самое главное с успехом справится с основной своей функцией, т.е. будет прямо или опосредованно работать на рост продаж и благополучие Вашей компании.
+			</p>
+		</div>
+		
+		<div class="information_content">
+			<div class="information_category">
+				<div class="information_category_image time"></div>
+				<div class="information_category_title">
+					<h3>Точно в срок</h3>
+				</div>
+				<div class="information_category_description">
+					<p>
+						Мы ценим время наших клиентов, а потому гарантируем, что Ваш проект будет сдан точно в срок и начнет приносить Вам пользу и прибыль своевременно.	
+					</p>
+				</div>
+			</div>
+
+			<div class="information_category">
+				<div class="information_category_image piggy"></div>
+				<div class="information_category_title">
+					<h3>С выгодой для Вас</h3>
+				</div>
+				<div class="information_category_description">
+					<p>
+						Нашим специалистам по силам создание проекта любой степени сложности, несмотря на это цена наших услуг ниже средней по рынку, а потому обращение к нам принесет Вам ощутимую выгоду.
+					</p>
+				</div>
+			</div>
+
+			<div class="information_category">
+				<div class="information_category_image garanty"></div>
+				<div class="information_category_title">
+					<h3>С гарантией качества</h3>
+				</div>
+				<div class="information_category_description">
+					<p>
+						Мы уверены в качестве созданных нами сайтов, поэтому в течение 3 лет после сдачи проекта при возникновении гарантийной ситуации Вы совершенно бесплатно можете обратиться за помощью в нашу компанию.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<footer>
+		<div class="footer_text">
+			<h6>&copy 2019 FabosGold <br> ВСЕ ПРАВА ЗАЩИЩЕНЫ</h6>
+		</div>
+		<div class="footer_logo">
+			<div class="footer_logo_fix">
+				<img src="img/Logo.png" alt="" style="width: auto; height: 32px; float: left; margin: 15px 10px;">
+				<h5>Fabos<span style="color: yellow;">Gold</span></h5>	
+			</div>
+		</div>
+		<div class="footer_social">
+			<div class="footer_social_media">
+				<img src="img/instagram-logo-398x388.png" alt="" class="footer_social_image">
+			</div>		
+			<div class="footer_social_media">
+				<img src="img/1.facebook-300x300.png" alt="" class="footer_social_image">
+			</div>		
+			<div class="footer_social_media">
+				<img src="img/telegram-512.png" alt="" class="footer_social_image">
+			</div>		
+			<div class="footer_social_media">
+				<img src="img/twitter.png" alt="" class="footer_social_image">
+			</div>		
+			
+		</div>
+	</footer>
+
+	
+
+	<script src="js/main_script.js"></script>
+</body>
+</html>
